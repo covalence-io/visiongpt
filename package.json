@@ -1,0 +1,25 @@
+{
+  "name": "visiongpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ts": "tsc -p .",
+    "start": "npm run ts && npm run start:server",
+    "start:server": "node index.js",
+    "dev": "tsc-watch -p tsconfig.json --onSuccess \"npm run start:server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.17.3",
+    "openai": "^4.19.0",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.2.2"
+  }
+}
